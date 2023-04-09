@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".activities.WelcomeActivity">
 
     <ImageView
         android:foreground="@drawable/foreground_design"
@@ -49,8 +49,10 @@
         android:layout_height="wrap_content"
         android:padding="14dp"
         android:textStyle="bold"
-        android:text="Register"
+        android:textSize="14dp"
+        android:text="@string/sign_in1"
         android:textAllCaps="false"
+        android:onClick="login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +64,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in1"
+        android:text="@string/register"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
+        android:onClick="register"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
